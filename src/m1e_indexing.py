@@ -19,7 +19,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   *** WHEN YOU RUN, you WILL get an ERROR MESSAGE.
 #   *** SEE THE CODE BELOW for what to do about that.
 ###############################################################################
-
+# Typing to see if commit works
 import rosegraphics as rg
 import time
 
