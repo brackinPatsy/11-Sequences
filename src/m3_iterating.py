@@ -250,8 +250,6 @@ def count_short_ones(seq_of_lists):
     return count
 
 
-
-
 def run_test_draw_circles():
     """ Tests the   draw_circles   function. """
     # -------------------------------------------------------------------------
@@ -328,9 +326,14 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # Done: 6. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range (len(points)):
+        c1 = rg.Circle(points[k],radius)
+        c1.fill_color = color
+        c1.attach_to(window)
+        window.render()
 
 
 # -----------------------------------------------------------------------------
