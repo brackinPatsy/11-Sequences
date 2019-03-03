@@ -37,7 +37,10 @@ def main():
     # run_test_sum_sequence()
     # run_test_count_items_bigger_than()
     # run_test_count_positive_sines()
-    run_test_sum_first_n()
+    #run_test_sum_first_n()
+    print(foo1([3]))
+    print(foo1([3, 6]))
+    print(foo1([3,6,1,4,9,5]))
 
 
 def run_test_sum_sequence():
@@ -690,6 +693,13 @@ def sum_first_n(numbers, n):
         total = total + numbers[k]
     return total
 
+
+def foo1(seq):
+    total = 0
+    for k in range(len(seq) // 2):
+        total = total + seq[1 + (2 * k)]
+        print('k = ', k,'index equal ', (1 +2*k),'total = ', total)
+    return total
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
