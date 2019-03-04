@@ -41,6 +41,17 @@ def main():
     print(foo1([3]))
     print(foo1([3, 6]))
     print(foo1([3,6,1,4,9,5]))
+    words = ['hi','there','my','friend']
+    x = words[3]
+    print(x)
+    print(words[2])
+    words[2] = 'her'
+    print(words[2])
+    things = (1, 4, 7, 10, 12, 44)
+    print(len(things))
+    print(things[len(things) - 1])
+    for k in range(len(things)):
+        print(things[k])
 
 
 def run_test_sum_sequence():
