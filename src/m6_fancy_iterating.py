@@ -49,12 +49,10 @@ def main():
     #        RE-commenting out the previous test if you wish.
     # -------------------------------------------------------------------------
 
-    #run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
-                                      sequence4)
-    run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
-    #                                    sequence4)
-    # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
-    #                                     sequence4)
+    #run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
+    #run_test_print_all_items_backwards(sequence1, sequence2, sequence3,sequence4)
+    run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
+                                         sequence4)
     # run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
     #                                     sequence4)
     # run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
@@ -64,8 +62,7 @@ def main():
     #                                            sequence3, sequence4)
 
 
-def run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
-                                      sequence4):
+def run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4):
     """ Tests the   print_all_items_forwards   function. """
     print()
     print('***********************************************************')
@@ -395,6 +392,8 @@ def print_all_items_backwards(sequence):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(len(sequence)-1, -1, -1):
+        print(sequence[k])
 
 
 ###############################################################################
@@ -417,7 +416,8 @@ def print_items_at_odd_indices(sequence):
     # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(1, len(sequence), 2):
+        print(sequence[k],' is at index ', k)
 
 ###############################################################################
 # Iterating through PART of a sequence:
