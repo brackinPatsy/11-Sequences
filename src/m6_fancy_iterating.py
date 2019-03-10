@@ -58,8 +58,16 @@ def main():
     #run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
     #run_test_print_items_that_are_strings(sequence1, sequence2, sequence3,
     #                                       sequence4)
-    run_test_print_items_that_are_odd_integers(sequence1, sequence2,
-                                                sequence3, sequence4)
+    #run_test_print_items_that_are_odd_integers(sequence1, sequence2,
+    #                                            sequence3, sequence4)
+    # quiz solutions
+    nums = 0
+    for k in range(5):
+        nums = nums + (k * 2)
+    print(nums)
+    s_of_s = [ [1,2,3], [4,5], [6], [7,8,9], [] ]
+    for k in range(len(s_of_s)-1, -1, -1):
+        print(len(s_of_s[k]))
 
 
 def run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4):
